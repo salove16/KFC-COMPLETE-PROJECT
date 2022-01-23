@@ -10,9 +10,10 @@ main{
 .container-5{
     width: 85%;
     margin: auto;
+    /* border: 1px solid red; */
 }
 .container-5>.boxes1{
-    margin-left: 0.9%;
+    margin-left: 1%;
 }
 .boxes2{
     display: flex;
