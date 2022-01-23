@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THANK YOU</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #upper {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        #heading{
+            text-align: center;
+            padding-bottom: 5%;
+            padding-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #payed{
+            text-align: center;
+        }
+
+        button {
+            margin-top: 2%;
+            margin-left: 46%;
+            padding: 12px 42px;
+            border-radius: 25px;
+            border: 0px;
+            background-color: #E4002B;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #upper>img {
+            margin-left: 42%;
+            /* border: 1px solid black; */
+            margin-top: 10%;
+            width: 16%;
+        }
+
+        #upper>p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        #order_id{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="upper">
+        <img src="images\icon.PNG" alt="">
+        <h1 id="heading">Your order has been successfully Placed</h1>
+        <h2 id="order_id"></h2>
+        <h1 id="payed"></h1>
+        <p>Continue Shopping</p>
+    </div>
+    <button id="gobackhome" onclick="homePage()">Go Home</button>
+</body>
+
+</html>
+<script>
+    var totalpayed= localStorage.getItem("finalpayable")
+document.querySelector("#payed").textContent=`Payed $${totalpayed}`
+
+document.querySelector("#gobackhome").addEventListener("click", homePage);
+function homePage(){
+    window.location.href="homepage.html"
+}
+var ordervalue=JSON.parse(localStorage.getItem("order_no"))
+document.querySelector("#order_id").textContent=`Order-No.-#000${ordervalue.length-1}`
+</script>

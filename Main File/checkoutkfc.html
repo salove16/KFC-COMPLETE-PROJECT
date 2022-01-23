@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+    <link rel="stylesheet" href="bottompanel.css">
+    <script src="https://kit.fontawesome.com/2af41ecea6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1,
+        .threelines {
+            margin-left: 200px
+        }
+
+        #navbar4 {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+
+        }
+
+        #locbar4 {
+            background-color: rgb(32, 33, 36);
+            height: 20px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        #login {
+            background-color: white;
+            border: none;
+        }
+
+        #navbar4>button:nth-child(1) {
+            border-radius: 20px;
+            color: black;
+            border: 2px solid black;
+            background-color: white;
+            height: 30px;
+            width: 120px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #container1 {
+            height: 800px;
+            width: 60%;
+            margin: auto;
+            /* background-color: black; */
+            display: flex;
+        }
+
+        #up1_1 {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #up1_1>div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #up1_2 {
+            width: 100%;
+            height: 20px;
+            background-color: rgb(26, 25, 24);
+        }
+
+        .box1_1 {
+            height: 100%;
+            width: 60%;
+            /* background-color: chartreuse; */
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 60%;
+
+
+        }
+
+        .box1_1>div {
+            background-color: rgb(253, 246, 246);
+            margin-bottom: 10px;
+            display: flex;
+
+
+        }
+
+        .box1_2 {
+            height: 45%;
+            width: 36%;
+            background-color: white;
+            margin: 50px 20px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 30px 0 0 30px;
+        }
+
+        .box1_1>div>div:nth-child(1) {
+            width: 30%;
+            height: 30%;
+            /* border: 2px solid white; */
+            margin: 10px 5px;
+            text-align: center;
+            padding-top: 35px;
+            font-weight: bold;
+
+        }
+
+        .box1_1>div>div:nth-child(2) {
+            width: 51%;
+            height: 85%;
+            /* border: 2px solid white; */
+            background-color: white;
+            margin: 10px 5px;
+            padding-top: 35px;
+            padding-left: 28px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .box1_1>div>a {
+            margin: 10px 5px;
+            padding-top: 35px;
+            color: black;
+        }
+
+
+        #payment>div:nth-child(1) {
+            height: 10%;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: white;
+            display: flex;
+            /* justify-content: space-around; */
+            border-radius: 10px;
+
+
+        }
+
+        #payment>div>img {
+            height: 50%;
+            margin: 10px 30px;
+
+        }
+
+        #payment>div>input {
+
+            margin-top: 10px;
+
+        }
+
+        #payment>div>p {
+            width: 30%;
+            margin-top: 10px;
+
+        }
+
+        #payment>div:nth-child(2) {
+
+            height: 80%;
+            width: 91%;
+
+            background-color: white;
+            /* padding-left: 28px; */
+        }
+
+        form>input {
+            width: 90%;
+            height: 40px;
+            margin-top: 5%;
+            border: none;
+            outline: none;
+
+        }
+
+        form>hr {
+            width: 90%;
+        }
+
+        div>hr {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: rgb(110, 109, 109);
+            font-size: 13px;
+
+        }
+
+        table {
+            width: 100%;
+            height: 300px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            padding: 10px;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        #paymentinfo>input {
+            margin-bottom: 15px;
+        }
+        #Paymentdiv{
+            /* background-color: blue; */
+            height: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar4">
+        <button id="gobackmenu" onclick="backtomenu()">Back to Menu</button>
+        <a href="index.html"><img src="images\Nav KFC.jpg" alt="KFC"></a>
+        <button id="login" onclick="loginPage()"><i class="far fa-user-circle fa-2x"></i></button>
+    </div>
+    <div id="locbar4"><span style="color: red;"><i class="fas fa-map-marker-alt"></i></span> Start an order for Pickup
+        Delivery</div>
+    </div>
+    <img class="threelines" src="images\KFC navlines.jpg">
+    <h1 style="margin-bottom: 20px;">CHECKOUT</h1>
+    <div id="container1">
+        <div class="box1_1">
+            <div>
+                <div>Contact Info</div>
+                <div>
+                    <form id="userinfo">
+                        <input type="text" placeholder="First Name">
+                        <hr>
+                        <input type="text" placeholder="Last Name">
+                        <hr>
+                        <input type="email" placeholder="Email">
+                        <hr>
+
+                        <input type="tel" placeholder="Phone No.">
+                        <hr>
+                    </form>
+                    <br>
+                    <p style="font-size: 11px;">by provideing my contact information i concent to call/or text from KFC
+                        and/or third
+                        partydelivery providers related to my orders, if applicable</p>
+                </div>
+            </div>
+            <div id="Paymentdiv">
+                <div>Payment</div>
+                <div id="payment">
+                    <div>
+                        <input type="radio">
+                        <img src="images\favpng_google-pay-send-mobile-payment.png" alt="">
+                        <p>Google pay</p>
+
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+                        </div>
+                        <form id="paymentinfo">
+                            <input type="text" placeholder="Nickname(Optional)">
+                            <hr>
+                            <input id="nameoncard" type="text" placeholder="Name on Card">
+                            <hr>
+                            <input id="card" type="number" placeholder="Card Number">
+                            <hr>
+                            <div style="display: flex;">
+                                <input id="exp" type="text" style="width: 45%;height:50px ; border: none; "
+                                    placeholder="Exp Date">
+                                <input id="cvv" type="number"
+                                    style="width: 40%;height:50px ; margin-left: 8.5%; border: none" placeholder="CVV">
+                            </div>
+                            <hr>
+                            <input type="number" placeholder="Billing Zip Code">
+                            <hr>
+                            <!-- <br> -->
+                            <input class="paybutton" type="submit" value=""
+                                style="border-radius: 20px ;border: 2px solid white; width:40%; height: 30px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1_2">
+            <h3>Your bag</h3>
+            <br>
+            <hr>
+            <table>
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td class="subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td class="tax">lmno</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Total</td>
+                        <td class="estimated">lmno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------BOTTOM PANEL------------------------------------------------------------ -->
+
+    <div id="container44">
+        <p>Calorie Statement</p>
+        <p>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition
+            information available upon request in-store and on kfc.com. Prices, participation, and product availability
+            may vary.</p>
+        <br>
+        <p>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Sierra Mist are registered trademarks of PepsiCo, Inc.
+            Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</p>
+        <br>
+        <div id="boxes44">
+            <div class="cards44">
+                <img src="images\Screenshot (74).jpg">
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>KFC Food</p>
+                    <li>Menu</li>
+                    <li>Full Nutrition Guide</li>
+                    <li>Nutrition Calculator</li>
+                    <li>Food Allergies & Sensitivities</li>
+                </ul>
+            </div>
+            <div class="cards44">
+                <ul>
+                    <p>Company</p>
+                    <li>About KFC</li>
+                    <li>How We Make Chicken</li>
+                    <li>KFC Foundation</li>
+                    <li>Company Responsibility</li>
+                    <li>Franchise a KFC</li>
+                    <li>Resposible Disclosure</li>
+                    <li>KFC Newsroom</li>
+                </ul>
+            </div>
+            <div class="cards44">
+                <ul>
+                    <p>Career</p>
+                    <li>Restaurant Careers</li>
+                    <li>Corporate Careers</li>
+                    <li>Culture</li>
+                    <li>Growth</li>
+                </ul>
+            </div>
+            <div class="cards44">
+                <ul>
+                    <p>Resources</p>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>KFC App</li>
+                </ul>
+            </div>
+            <div class="cards44">
+                <ul>
+                    <p>Find a KFC</p>
+                    <li>Find a KFC</li>
+                </ul>
+            </div>
+        </div>
+        <div id="lastbox44">
+            <div class="section44">
+                <div>
+                    <p>Privacy Policy </p>
+                </div>
+                <div>
+                    <p>Update 12/2021</p>
+                </div>
+                <div>
+                    <p>Terms Of Use</p>
+                </div>
+                <div>
+                    <p>Our Cookies & Ads</p>
+                </div>
+                <div>
+                    <p>Do Not Sell My Personal Information</p>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+            </div>
+            <div style="display: flex;">
+                <i class="fab fa-instagram" style="margin-right: 3px;"></i>
+                <i class="fab fa-facebook" style="margin-right: 3px;"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div style="border-left:gray;">
+            <p> Asessibility Statement</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+     //---------------------------------------------------------------------------------------------------------function buttons
+     document.querySelector("#gobackmenu").addEventListener("click", backtomenu);
+    function backtomenu() {
+        window.location.href = "homepage.html"
+    }
+    document.querySelector("#login").addEventListener("click", loginPage);
+    function loginPage() {
+        window.location.href = "login.html"
+    }
+    //-------------------------------------------------------------------------------------------------------------main script
+    var cartarray = JSON.parse(localStorage.getItem("cartdata")) || [];
+
+    var nos = cartarray.length;
+    document.querySelector("thead").textContent = `${nos} ITEM`
+
+    var subtotal = cartarray.reduce(function (ac, el) {
+        return ac + Number(el.price);
+    }, 0);
+    document.querySelector(".subtotal").textContent = `$ ${subtotal.toFixed(2)}`
+
+    var tax = subtotal * (0.12);
+    document.querySelector(".tax").textContent = `$ ${tax.toFixed(2)}`
+
+    var estimated = tax + subtotal
+    document.querySelector(".estimated").textContent = `$ ${estimated.toFixed(2)}`
+
+    document.querySelector(".paybutton").value = `Pay $${estimated.toFixed(2)}`
+    // localStorage.setItem("KFCtotalprice", estimated);
+
+    //----------------------------------------------------------------------------------------------------------------------------
+
+    document.querySelector("#paymentinfo").addEventListener("submit", myFunction)
+    function myFunction(event) {
+        event.preventDefault();
+        var nameoncard = document.querySelector("#nameoncard").value;
+        var card = document.querySelector("#card").value;
+        var exp = document.querySelector("#exp").value;
+        var cvv = document.querySelector("#cvv").value;
+        // console.log(nameoncard,card,cvv,exp)
+        localStorage.setItem("finalpayable", estimated);
+        if ((nameoncard == "huzaifa"||nameoncard == "shashank"||nameoncard =="satish" ||nameoncard =="neha" ||nameoncard =="mayuri" ||nameoncard ==  "mohit")&& card == 123456789 && cvv == 123 && exp == "12/24") {
+            console.log("success")
+            window.location.href = "otp.html";
+            alert(`Total payable is ${val.toFixed(2)}`)
+        }
+        // else   if (nameoncard == "Shashank Shalabh" && card == 123456789 && cvv == 123 && exp == "12/24") {
+        //     console.log("success")
+        //     window.location.href = "otp.html";
+        //     alert(`Total payable is ${val.toFixed(2)}`)
+        // }
+        else {
+            alert("Invalid Details")
+        }
+    }
+</script>

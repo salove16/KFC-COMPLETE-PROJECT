@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        #container{
+            margin:200px auto;
+            /* background-color: #212121; */
+            
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+        form{
+            text-align: center;
+        }
+        input{
+            width: 90%;
+            height: 20%;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+        h1{
+            color: black
+           
+        }
+        #submit{
+            width: 30%;
+            padding: 5px;
+            border-radius: 20px;
+            color: white;
+            border: none;
+            background-color: rgb(228, 0, 43);
+            height: 30px;
+            /* width: 120px; */
+            margin-top: 10px;
+            /* padding: 5px; */
+        }
+        #submit:hover{
+            background-color: rgb(192, 5, 39); 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <h1>Enter OTP</h1>
+                <input id="otp" type="number"></input>
+            <input id="submit" type="submit"></input>
+        </form>
+    </div>
+</body>
+<script>
+document.querySelector("form").addEventListener("submit", myFunction);
+
+var count=0;
+function myFunction(event) {
+    event.preventDefault();
+    var orderarr=[];
+   var verify =document.querySelector("#otp").value;
+   if(verify==1234)
+   {
+       window.location.href="success.html"
+       count++;
+       orderarr.push(count)
+       localStorage.setItem("order_no",JSON.stringify(orderarr))
+
+   }
+   else
+   {
+       alert("Invalid OTP");
+       window.location.href="checkoutkfc.html";
+   }
+    
+
+}
+</script>

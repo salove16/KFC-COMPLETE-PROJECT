@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ---------------------------------------------------------NAV BAR ----------------------------------------------------------------------- */
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding-bottom: 25px;
+        }
+
+        .box1_5 {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 17%;
+        }
+
+        .box2_5 {
+            width: 33%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img_align {
+            vertical-align: top;
+            height: 25px;
+            margin-top: -4px;
+        }
+
+        .box1_5>a {
+            text-decoration: none;
+            vertical-align: top;
+            font-family: sans-serif;
+            padding-top: 15px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .box1_5>a:hover {
+            text-decoration: underline;
+        }
+
+        .box2_5>button:hover {
+            background-color: #d40d31;
+        }
+
+        .btn-class {
+            padding: 12px 42px;
+            border-radius: 25px;
+            border: 0px;
+            background-color: #E4002B;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        .fas_size {
+            margin: 5px 0px;
+            width: 55px;
+            cursor: pointer;
+        }
+
+        .icon-border {
+            border-right: 1px solid silver;
+            height: 30px;
+
+        }
+
+        .nav-bottom {
+            display: flex;
+            background-color: #202124;
+            color: white;
+            justify-content: center;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        .nav-bottom:hover {
+            background-color: #303133;
+        }
+
+        .nav-bottom>.para {
+            margin-top: 12px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .nav-bottom>.location {
+            width: 20px;
+            margin-top: 9px;
+            color: #E4002B;
+        }
+
+        .nav-top {
+            width: 85%;
+            height: 28px;
+            margin: auto;
+        }
+
+        .nav-top>img {
+            margin-left: 1.65%;
+        }
+
+        #mobile_nav {
+            display: none;
+        }
+
+        .nav-bottom>a {
+            display: none;
+        }
+
+        /* ----------------------------------------media query------------------------------------------------------ */
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            nav {
+                display: none;
+            }
+
+            .nav-top {
+                display: none;
+            }
+
+            #mobile_nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 44px;
+            }
+
+            #mobile_nav>a {
+                color: black;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .nav-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-bottom>.para {
+                margin-top: 1px;
+            }
+
+            .nav-bottom>.location {
+                margin-left: 5%;
+                margin-top: 0px;
+
+            }
+
+            .nav-bottom>a {
+                display: block;
+                margin-right: 5%;
+                color: white;
+            }
+
+        }
+
+        /*------------------------------------------------------------SIGN UP PAGE-------------------------------------------------------------------- */
+        #container1 {
+            width: 100%;
+            /* height: 700px; */
+            display: flex;
+            /* background-color: black; */
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #box1 {
+            width: 55%;
+            height: 90%;
+            /* background-color: blanchedalmond; */
+            margin-right: 5%;
+            margin-bottom: -4px;
+        }
+
+        #box2 {
+            width: 30%;
+            height: 100%;
+            /* background-color: blanchedalmond; */
+            margin-left: 1.5%;
+            margin-top: 1.5%
+        }
+
+        img {
+            width: 100%
+        }
+
+        #box2_1 {
+            width: 70%;
+            height: 60%;
+            /* background-color: blue; */
+
+        }
+
+        input {
+            width: 100%;
+            margin-top: 30px;
+            height: 25px;
+            border: none;
+            font-size: larger;
+            /* font-weight: bold; */
+            outline: none;
+            margin-bottom: 10px;
+            /* background-color: white; */
+        }
+
+        #submitbutton {
+            width: 82%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: rgb(219, 219, 219);
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            border: none;
+        }
+
+        /* #forget {
+            font-size: x-small;
+            width: 10%;
+            height: 10%;
+            border: none
+        } */
+
+        /* #box2_1>p:nth-child(1) {
+            font-size: 1px
+        }
+        #box2_1>p:nth-child(2) {
+            font-size: 20px
+        } */
+
+        a {
+            color: black;
+        }
+
+        /* form>lable>input{
+            width: 80%;
+        } */
+        /* #checkbox1{
+            font-size: 10px;
+        } */
+        lable>input {
+            margin: 2px
+        }
+
+        td>p {
+            margin: 0 0 10px;
+        }
+
+        td>input {
+            height: fit-content;
+            width: fit-content;
+            margin: 0 5px;
+
+        }
+
+        td {
+            padding: 0;
+        }
+        #submitbutton:hover{
+            background-color: black;
+        }
+
+        /* ----------------------------------------------------------------Bottom Panel------------------------------------- */
+
+        #container4 {
+            background-color: rgb(32, 33, 36);
+            padding: 50px 250px;
+            text-align: justify;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p {
+            width: 70%;
+            font-size: 12px;
+        }
+
+        #boxes4 {
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .cards4 {
+            width: 18%;
+        }
+
+        ul>p {
+            font-size: 14px;
+        }
+
+        #lastbox4 {
+            display: flex;
+            /* border: 1px solid green; */
+            height: 50px;
+            margin-top: 60px;
+        }
+
+        .section4 {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 75%;
+            margin-right: 80px;
+        }
+
+        .section4>div:hover {
+            text-decoration: underline;
+        }
+
+        .section4>div {
+            width: 19%;
+            margin-right: 5px;
+            border-right: 1px solid gray;
+        }
+
+        .section4>:nth-child(5) {
+            border-right: none;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            #boxes4 {
+                flex-direction: column;
+                width: 30%;
+                margin: auto
+            }
+
+            .cards4 {
+                width: 100%;
+                height: 30px;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .cards4:nth-child(1) {
+                height: 100px;
+                /* margin-left: -60px; */
+
+            }
+
+            i {
+                margin-right: 2px
+            }
+
+            #container1 {
+                flex-direction: column-reverse;
+            }
+
+            #box1 {
+                width: 100%;
+            }
+
+            #box2 {
+                width: 100%;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------------------------------------------- Nav Bar ----------------------------------------------------------->
+    <header>
+        <div id="mobile_nav">
+            <a href=""><i class="fas fa-bars fa-1x"></i></a>
+            <a href="index.html"><img src="images\kfc.jpeg" alt="kfc"></a>
+            <a href="cart.html"><i class="fas fa-shopping-bag fa-1x "></i></a>
+        </div>
+        <div class="nav-top">
+            <img src="images\KFC navlines.jpg" alt="lines" style="height: 80%; width: 4%;">
+        </div>
+        <nav>
+            <div class="box1_5">
+                <a href="index.html"><img class="img_align" src="images\Nav KFC.jpg" alt="chicken"></a>
+                <a href="homepage.html">Menu</a>
+                <a href="career.html">Careers</a>
+                <a href="About.html">About</a>
+                <a href="findkfc.html">Find a KFC®</a>
+            </div>
+            <div class="box2_5">
+                <button id="startorder" class="btn-class" onclick="homePage()">Start Order</button>
+                <a href="login.html"><i class="fas fa-user-circle fa-2x icon-border fas_size"></i></a>
+                <i class="fas fa-shopping-bag fa-2x "></i>
+            </div>
+        </nav>
+        <div class="nav-bottom">
+            <div class="location"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="para">Start an Order for Pickup or Delivery</div>
+            <a href=""><i class="fas fa-caret-down"></i></a>
+        </div>
+    </header>
+
+    <!-----------------------------------------------------------SIGN IN PAGE ---------------------------------------------------------->
+
+    <div id="container1">
+        <div id="box1">
+            <img src="images\Screenshot 2022-01-17 201023.jpg" alt="" style="height: 100%;">
+        </div>
+        <div id="box2">
+            <div id="box2_1">
+                <div>
+                    <h1>CREATE AN ACCOUNT</h1>
+                </div>
+                <form>
+                    <input id="firstname" type="text" placeholder="First Name*">
+                    <hr>
+                    <input id="lastname" type="text" placeholder="Last Name*">
+                    <hr>
+                    <input id="email" type="email" placeholder="Email*">
+                    <hr>
+                    <input id="password" type="password" placeholder="Password*">
+                    <hr>
+                    <input id="confirmpassword" type="password" placeholder="Confirm Password*">
+                    <hr>
+                    <br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <p> By selecting the box, you agree to our
+                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        and
+                                        <a href="/terms-of-use">Terms of Use</a>
+                                    </p>
+                                </td>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <p>Sign up for Email Updates and Promotions.
+
+                                    </p>
+                                </td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <input id="submitbutton" type="submit" value="Create Account">
+                        <p style="text-align: center; font-size: 15px; margin-top: 8px; margin-bottom: 10px;">Already a
+                            member
+                            <a href="login.html">Sign In?</a>
+                        </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------------------------------------------------------------BOTTOM PANEL------------------------------------------------------------------- -->
+
+    <div id="container4">
+        <div id="boxes4">
+            <div class="cards4">
+                <img src="images\Screenshot (74).jpg">
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>KFC Food</p>
+                    <li>Menu</li>
+                    <li>Full Nutrition Guide</li>
+                    <li>Nutrition Calculator</li>
+                    <li>Food Allergies & Sensitivities</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Company</p>
+                    <li>About KFC</li>
+                    <li>How We Make Chicken</li>
+                    <li>KFC Foundation</li>
+                    <li>Company Responsibility</li>
+                    <li>Franchise a KFC</li>
+                    <li>Resposible Disclosure</li>
+                    <li>KFC Newsroom</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Career</p>
+                    <li>Restaurant Careers</li>
+                    <li>Corporate Careers</li>
+                    <li>Culture</li>
+                    <li>Growth</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Resources</p>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>KFC App</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Find a KFC</p>
+                    <li>Find a KFC</li>
+                </ul>
+            </div>
+        </div>
+        <div id="lastbox4">
+            <div class="section4">
+                <div>
+                    <p>Privacy Policy </p>
+                </div>
+                <div>
+                    <p>Update 12/2021</p>
+                </div>
+                <div>
+                    <p>Terms Of Use</p>
+                </div>
+                <div>
+                    <p>Our Cookies & Ads</p>
+                </div>
+                <div>
+                    <p>Do Not Sell My Personal Information</p>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+            </div>
+            <div style="display: flex;">
+                <i class="fab fa-instagram" style="margin-right: 3px;"></i>
+                <i class="fab fa-facebook" style="margin-right: 3px;"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div style="border-left:gray;">
+            <p> Asessibility Statement</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    document.querySelector("#startorder").addEventListener("click", homePage);
+    function homePage() {
+        window.location.href = "homepage.html"
+    }
+
+    document.querySelector("form").addEventListener("submit", myFunction)
+    var userdetails = JSON.parse(localStorage.getItem("localkfcuser")) || [];
+    function myFunction(event) {
+        event.preventDefault();
+        var firstname = document.querySelector("#firstname").value;
+        var lasttname = document.querySelector("#lastname").value;
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#password").value;
+        var confirm = document.querySelector("#confirmpassword").value;
+
+        if (confirm != pass) {
+            alert("Password doesnt match")
+        }
+        else {
+            var objUser = {
+                Firstname: firstname,
+                Lastname: lasttname,
+                Email: email,
+                Pass: pass
+            }
+
+            userdetails.push(objUser);
+            localStorage.setItem("localkfcuser", JSON.stringify(userdetails));
+            console.log(userdetails)
+            alert("Signin Succesful")
+            window.location.href = "login.html";
+        }
+        // if(firstname!=null&&lasttname!=null&&email!=null&&pass!=null&&confirm!=null)
+        // {
+        //     var highlight=document.querySelector("#submitbutton")
+            
+            
+        // }
+    };
+
+</script>

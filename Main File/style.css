@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+}
+.container-5{
+    width: 85%;
+    margin: auto;
+}
+.container-5>.boxes1{
+    margin-left: 0.9%;
+}
+.boxes2{
+    display: flex;
+    margin-top: 30px;
+}
+.oldman{
+   width: 40%;
+   margin-right: 3%;
+}
+.oldman>img{
+    width: 100%;
+}
+.texts{
+    width: 60%;
+    margin-left: 1%;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #202124;
+    padding-top: 75px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#aboutkfc-container-5{
+    width: 100%;
+    background-color: #F8F7F5;
+    margin-top: -150px;
+    padding-top: 70px;
+}
+.about-kfc-header{
+    display: flex;
+    text-transform: uppercase;
+    width: 82%;
+    margin: auto;
+}
+
+#about_kfc{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 30px;
+}
+#hr_width{
+    width: 20%;
+    margin-top: 0px;
+    margin-left: 35px;
+}
+#aboutkfc-container-5>.we_make{
+    font-family: sans-serif;
+    line-height: 28px;
+    width: 82%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #404143;
+
+}
+#redchicken-container-5{
+    width: 100%;
+    background-color:#F8F7F5 ;
+    padding-top: 100px;
+}
+#reddiv_container-5{
+    background-color: #E4002B;
+    width: 82%;
+    margin: auto;
+    height: 600px;
+    display: flex;
+}
+.red_chickenbox{
+    width: 50%;
+
+}
+.hardway{
+    width: 50%;
+}
+.red_chickenbox>img{
+    margin-top: 143px;
+}
+.hardway_1{
+    margin-top: 100px;
+}
+.hardway_1>p{
+    text-transform: uppercase;
+    color: white;
+    font-family:'Roboto Condensed', sans-serif ;
+    font-size: 14px;
+}
+.hardway_1>h1{
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-family:'Roboto Condensed', sans-serif ;
+    font-size: 65px;
+}
+.hardway_1>h5{
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 30px;
+
+}
+
+.hardway_2>button{
+    margin-top: 30px;
+    padding: 12px 46px;
+    border-radius: 25px;
+    border: 0px;
+    background-color:black;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer; 
+}
+/*--------------------------------------------- oldman------------------------------------ */
+#unlock_more_finger{
+    /* display: flex; */
+    width: 100%;
+    background-color: #F8F7F5;
+}
+#unlock_wraper{
+    width: 85%;
+    display: flex;
+    margin: auto;
+}
+#unlock_texts{
+    width: 67%;
+    margin-left: 1.5%;
+}
+#unlock_texts>h1{
+    margin-top: 120px;
+    text-transform: uppercase;
+    font-family:'Roboto Condensed', sans-serif ;
+    color:#202124;
+    font-size: 55px;
+
+}
+#unlock_texts>p{
+    color: #202124;
+    margin-top: 15px;
+    font-family: sans-serif ;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+}
+#unlock_texts>button{
+    margin-top: 35px;
+    padding: 12px 46px;
+    border-radius: 25px;
+    border: 0px;
+    background-color:black;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+#old_man{
+    width: 27%;
+}
+#old_man>img{
+    width: 400px;
+}
+#mohit_container{
+    width: 100%;
+    background-color:#F8F7F5 ;
+}
+#Mohit{
+    width: 82%;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    background-color: #F8F7F5;
+    padding-top: 100px;
+}
+#oldimg{
+    width: 42%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/2Qk8bdug8e1FNxFt4nMuGv/bf7736702d142e7fd42076f889fd206b/about-story-narrow.png?w=640");
+    background-size: contain;
+    margin-left: 100px;
+}
+#Texthead{
+    width: 58%;
+    height: 530px;
+    padding-top: 60px;
+}
+#subhead{
+    font-size: 60px;
+    font-weight: 600;
+    font-family:'Roboto Condensed', sans-serif ;
+    color: #202124;
+}
+#paraHR{
+    height: 0.1px;
+    width: 250px;
+    padding-left: 5px;
+    
+}
+#hrtag{
+    margin-top: 20px;
+    display: flex;
+}
+#hrtag>h5{
+    font-family: sans-serif ;
+    color: #202124;
+    font-size: 15px;
+}
+hr{
+    height: 0.01px;
+    margin-top: 8px;
+    width: 230px;
+    margin-left: 35px;
+}
+#innertext{
+    font-size: 17px;
+    padding-top: -15px;
+    font-family: sans-serif ;
+    color: #202124;
+    margin-top: 20px;
+    line-height: 25px;
+    font-weight: 100;
+}
+#mohit_container_5{
+    width: 100%;
+    background-color:#F8F7F5 ;    
+}
+#seclast{
+    display: flex;
+    width: 82%;
+    margin: auto;
+    background-color: #F8F7F5;
+}
+#tecst{
+    padding-top: 150px;
+    width: 40%;
+    margin-right: 5%;
+}
+#tecst>#upperline{
+  margin-left: 30px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  width: 82%;
+}
+#upperline{
+    margin-bottom: 20px;
+}
+#buddha2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 55%;
+}
+#buddha2>img{
+    width: 100%;
+}
+#KKK{
+    margin-top: 60px;
+    display: flex;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#KKK>hr{
+    width: 73%;
+}
+#finalbox{
+    margin: auto;
+    display: flex;
+    width: 70%;
+    margin-bottom: 60px;
+}
+#finalbox>#im1{
+    width: 47%;
+    margin-right: 2%;
+
+}
+#finalbox>#im2{
+    width: 47%;
+    
+}
+#finalbox>#im1>p{
+   margin-top: 10%;
+}
+#finalbox>#im2>p{
+    margin-top: 10%;
+ }
+
+
+
+#Me2{
+    background-size: cover;
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 110px;
+    background-color: #F8F7F5;
+
+}
+#finalimg{
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/21tnFdAR80lItITKsz6dLL/bae7535166bab0052b6509aed16b0245/about-card.jpg?q=75&w=1680");
+    background-size: contain;
+    width: 100%;
+    height: 550px;
+    padding-top: 115px;
+
+}
+#im1{
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/5Cki0qVf7HBH5wJhgxH9Hj/fc2b19768c3365d79e9ae71032da5b81/about-routing-primary.jpg?w=640");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 85px;
+    font-weight: bolder;
+    width: 48%;
+    height: 300px;
+}
+#im2{
+    background-image: url("https://images.ctfassets.net/9tka4b3550oc/7xIarT0xxLx8fy3db1FIGQ/3e99a5ebf9147657dc3f59e309204c03/about-routing-1.jpg?w=640");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 85px;
+    font-weight: bolder;
+    width: 48%;
+    height: 300px;  
+    padding-left: 20px;
+}
+#fasaad{
+    width: 38%;
+    border-radius: 3px;
+    background-color: white;
+    /* border: 1px solid red; */
+    margin-left: 55%;
+    padding-bottom: 50px;
+}
+#fasaad>img{
+    margin-left: 38px;
+}
+#fasaad>h3{
+    font-family:'Roboto Condensed', sans-serif;
+    line-height: 35px;
+    font-size: 30px;
+    color: #202124;
+    padding-top: 30px;
+
+}
+#fasaad>p{
+    color: #202124;
+    line-height: 20px;
+}
+#finaltouch{
+    padding-left: 40px;
+    padding-top: 20px;
+    
+}
+#finalhead{
+    padding-left: 40px;
+}

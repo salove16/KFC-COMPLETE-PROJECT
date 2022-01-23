@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        /* nav bar ------------------------------------------------------------------------------------------- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding-bottom: 25px;
+        }
+
+        .box1_5 {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 17%;
+        }
+
+        .box2_5 {
+            width: 33%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img_align {
+            vertical-align: top;
+            height: 25px;
+            margin-top: -4px;
+        }
+
+        .box1_5>a {
+            text-decoration: none;
+            vertical-align: top;
+            font-family: sans-serif;
+            padding-top: 15px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .box1_5>a:hover {
+            text-decoration: underline;
+        }
+
+        .box2_5>button:hover {
+            background-color: #d40d31;
+        }
+
+        .btn-class {
+            padding: 12px 42px;
+            border-radius: 25px;
+            border: 0px;
+            background-color: #E4002B;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .fas_size {
+            margin: 5px 0px;
+            width: 55px;
+            cursor: pointer;
+        }
+
+        .icon-border {
+            border-right: 1px solid silver;
+            height: 30px;
+
+        }
+
+        .nav-bottom {
+            display: flex;
+            background-color: #202124;
+            color: white;
+            justify-content: center;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        .nav-bottom:hover {
+            background-color: #303133;
+        }
+
+        .nav-bottom>.para {
+            margin-top: 12px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .nav-bottom>.location {
+            width: 20px;
+            margin-top: 9px;
+            color: #E4002B;
+        }
+
+        .nav-top {
+            width: 85%;
+            height: 28px;
+            margin: auto;
+        }
+
+        .nav-top>img {
+            margin-left: 1.65%;
+        }
+
+        #mobile_nav {
+            display: none;
+        }
+
+        .nav-bottom>a {
+            display: none;
+        }
+
+        /* ----------------------------------------media query------------------------------------------------------ */
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            nav {
+                display: none;
+            }
+
+            .nav-top {
+                display: none;
+            }
+
+            #mobile_nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 44px;
+            }
+
+            #mobile_nav>a {
+                color: black;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .nav-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-bottom>.para {
+                margin-top: 1px;
+            }
+
+            .nav-bottom>.location {
+                margin-left: 5%;
+                margin-top: 0px;
+
+            }
+
+            .nav-bottom>a {
+                display: block;
+                margin-right: 5%;
+                color: white;
+            }
+
+        }
+
+
+        /* login section ------------------------------------------------------------------------------- ---------------------------------------*/
+
+        #container1 {
+            width: 100%;
+            /* height: 700px; */
+            display: flex;
+            /* background-color: black; */
+
+        }
+
+        #box1 {
+            width: 55%;
+            height: 90%;
+            /* background-color: blanchedalmond; */
+            margin: -4px
+        }
+
+        #box2 {
+            width: 35%;
+            height: 90%;
+            /* background-color: blanchedalmond; */
+            margin: 5% 5%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #box2_1 {
+            width: 70%;
+            height: 80%;
+            /* background-color: blue; */
+            margin: 1%;
+
+        }
+
+        #box2_1>div {
+            font-size: 2.5rem;
+            line-height: 3.3rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 85%;
+            margin-top: 50px;
+            height: 50px;
+            border: none;
+            font-size: larger;
+            font-weight: bold;
+            outline: none;
+        }
+
+        #submitbutton {
+            width: 82%;
+            height: 50px;
+            border-radius: 25px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+            margin-bottom: 10px;
+            border: none;
+        }
+
+        #box2_1>p {
+            font-size: 15px;
+        }
+
+        #forget {
+            font-size: x-small;
+            width: 10%;
+            height: 10%;
+            border: none
+        }
+
+        #box2_1>p:nth-child(1) {
+            font-size: 1px;
+            margin-bottom: 5px;
+        }
+
+        #box2_1>p:nth-child(2) {
+            font-size: 20px
+        }
+
+        a {
+            color: black;
+        }
+
+        /* form>lable>input{
+            width: 80%;
+        } */
+
+        /* -------------------------------Bottom Panel:---------------------------------------------------- */
+        #container4 {
+            background-color: rgb(32, 33, 36);
+            padding: 50px 250px;
+            text-align: justify;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p {
+            width: 70%;
+            font-size: 12px;
+        }
+
+        #boxes4 {
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .cards4 {
+            width: 18%;
+        }
+
+        ul>p {
+            font-size: 14px;
+        }
+
+        #lastbox4 {
+            display: flex;
+            /* border: 1px solid green; */
+            height: 50px;
+            margin-top: 60px;
+        }
+
+        .section4 {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 75%;
+            margin-right: 80px;
+        }
+
+        .section4>div:hover {
+            text-decoration: underline;
+        }
+
+        .section4>div {
+            width: 19%;
+            margin-right: 5px;
+            border-right: 1px solid gray;
+        }
+
+        .section4>:nth-child(5) {
+            border-right: none;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            #boxes4 {
+                flex-direction: column;
+                width: 30%;
+                margin: auto;
+            }
+
+            .cards4 {
+                width: 100%;
+                height: 30px;
+                overflow: hidden;
+                /* text-align: center; */
+            }
+
+            .cards4:nth-child(1) {
+                height: 80px;
+                /* margin-left: -60; */
+
+            }
+
+            i {
+                margin-right: 2px
+            }
+
+            #container1 {
+                flex-direction: column-reverse;
+            }
+
+            #box1 {
+                width: 100%;
+            }
+
+            #box2 {
+                width: 100%;
+            }
+
+
+
+
+        }
+        #box2_1>input:nth-child(1)
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nave bar -->
+    <header>
+        <div id="mobile_nav">
+            <a href=""><i class="fas fa-bars fa-1x"></i></a>
+            <a href="index.html"><img src="images\kfc.jpeg" alt="kfc"></a>
+            <a href="cart.html"><i class="fas fa-shopping-bag fa-1x "></i></a>
+        </div>
+        <div class="nav-top">
+            <img src="images\KFC navlines.jpg" alt="lines" style="height: 80%; width: 4%;">
+        </div>
+        <nav>
+            <div class="box1_5">
+                <a href="index.html"><img class="img_align" src="images\Nav KFC.jpg" alt="chicken"></a>
+                <a href="homepage.html">Menu</a>
+                <a href="career.html">Careers</a>
+                <a href="About.html">About</a>
+                <a href="findkfc.html">Find a KFC®</a>
+            </div>
+            <div class="box2_5">
+                <button id="startorder" onclick="homePage()"class="btn-class">Start Order</button>
+                <i class="fas fa-user-circle fa-2x icon-border fas_size"></i>
+                <i id="cart" onlick="cartPage()" class="fas fa-shopping-bag fa-2x "></i>
+            </div>
+        </nav>
+        <div class="nav-bottom">
+            <div class="location"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="para">Start an Order for Pickup or Delivery</div>
+            <a href=""><i class="fas fa-caret-down"></i></a>
+        </div>
+    </header>
+    <!-- login section  -->
+    <div id="container1">
+        <div id="box1">
+            <img src="images\Screenshot 2022-01-17 201023.jpg" alt="">
+        </div>
+        <div id="box2">
+            <div id="box2_1">
+                <div>SIGN IN TO YOUR KFC ACCOUNT</div>
+                <form action="">
+                    <input  id="email" type="email" placeholder="Email">
+                    <hr>
+                    <br>
+                    <label for="">
+                        <input id="password" type="password" placeholder="Password">
+                        <input type="text" placeholder="forget?" id="forget">
+                        <hr>
+                    </label>
+                    <br>
+                    <input type="submit" id="submitbutton" value="Log In">
+                    <br>
+                    <br>
+                    <p>By signing into the application or proceeding as a guest, you agree to our
+                        <a href="/privacy-policy">Privacy Policy</a>
+                        and
+                        <a href="/terms-of-use">Terms of Use</a>
+                    </p>
+                    <br>
+                    <h4 style="margin-top:5px;">Don't have an account?
+                        <a href="signinpage.html">Join now</a>
+                    </h4>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  Bottom Panel-------------------------------------------------------------------------------------------------->
+
+    <div id="container4">
+        <p>Calorie Statement</p>
+        <p>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition
+            information available upon request in-store and on kfc.com. Prices, participation, and product availability
+            may vary.</p>
+        <br>
+        <p>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Sierra Mist are registered trademarks of PepsiCo, Inc.
+            Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</p>
+        <br>
+        <div id="boxes4">
+            <div class="cards4">
+                <img src="images\Screenshot (74).jpg">
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>KFC Food</p>
+                    <li>Menu</li>
+                    <li>Full Nutrition Guide</li>
+                    <li>Nutrition Calculator</li>
+                    <li>Food Allergies & Sensitivities</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Company</p>
+                    <li>About KFC</li>
+                    <li>How We Make Chicken</li>
+                    <li>KFC Foundation</li>
+                    <li>Company Responsibility</li>
+                    <li>Franchise a KFC</li>
+                    <li>Resposible Disclosure</li>
+                    <li>KFC Newsroom</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Career</p>
+                    <li>Restaurant Careers</li>
+                    <li>Corporate Careers</li>
+                    <li>Culture</li>
+                    <li>Growth</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Resources</p>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>KFC App</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Find a KFC</p>
+                    <li>Find a KFC</li>
+                </ul>
+            </div>
+        </div>
+        <div id="lastbox4">
+            <div class="section4">
+                <div>
+                    <p>Privacy Policy </p>
+                </div>
+                <div>
+                    <p>Update 12/2021</p>
+                </div>
+                <div>
+                    <p>Terms Of Use</p>
+                </div>
+                <div>
+                    <p>Our Cookies & Ads</p>
+                </div>
+                <div>
+                    <p>Do Not Sell My Personal Information</p>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+            </div>
+            <div style="display: flex;">
+                <i class="fab fa-instagram" style="margin-right: 3px;"></i>
+                <i class="fab fa-facebook" style="margin-right: 3px;"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div style="border-left:gray;">
+            <p> Asessibility Statement</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    //--------------------------------------------------------------------------------------function buttons
+    
+    document.querySelector("#startorder").addEventListener("click", homePage);
+    function homePage() {
+        window.location.href = "homepage.html"
+    }
+
+    document.querySelector("#cart").addEventListener("click", cartPage);
+    function cartPage() {
+        window.location.href = "cart.html"
+    }
+    //------------------------------------------------------------------------------------------------signin
+    document.querySelector("form").addEventListener("submit", myFunction);
+    var regdUsers = JSON.parse(localStorage.getItem("localkfcuser"));
+    function myFunction(event) {
+        event.preventDefault();
+        var email = document.querySelector("#email").value;
+        var pass = document.querySelector("#password").value;
+        console.log(regdUsers.Username)
+
+
+        var count=0;
+        for (i = 0; i < regdUsers.length; i++) {
+            // console.log(regdUsers[i].Email,regdUsers[i].Pass)
+            if (email == regdUsers[i].Email && pass == regdUsers[i].Pass) {
+                alert("Login Successfull");
+                window.location.href = "homepage.html";
+                break;
+            }
+            else{
+                count++;
+            }
+        }
+        if(count== regdUsers.length)
+        {
+            alert("Invalid Details")
+        }
+
+
+
+        // for (i = 0; i < regdUsers.length; i++) {
+        //     if (email != regdUsers[i].Email || pass != regdUsers[i].Pass) {
+        //         alert("Invalid details");
+        //         break;
+        //     }
+        // }
+
+
+    }
+</script>

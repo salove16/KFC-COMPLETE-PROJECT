@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CART</title>
+    <script src="https://kit.fontawesome.com/2af41ecea6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        #navbar4 {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+
+        }
+
+        #locbar4 {
+            background-color: rgb(32, 33, 36);
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        #navbar4>button:nth-child(1) {
+            border-radius: 20px;
+            color: black;
+            border: 2px solid black;
+            background-color: white;
+            height: 30px;
+            width: 120px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #container44 {
+            display: flex;
+            width: 80%;
+            margin: 20px auto 30px;
+            /* border: 1px solid red; */
+            gap: 20px;
+        }
+
+        h1,
+        .threelines {
+            margin-left: 200px
+        }
+
+        #leftdiv {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(248, 247, 245)
+        }
+
+        table {
+            width: 100%;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+        }
+
+        #box44 {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        thead {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .functionbutton,
+        #checkoutbutton {
+            border-radius: 20px;
+            color: white;
+            border: none;
+            background-color: rgb(228, 0, 43);
+            height: 30px;
+            width: 120px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #rightdiv4 {
+            width: 35%;
+        }
+
+        #login {
+            background-color: white;
+            border: none
+        }
+
+        #container4 {
+            background-color: rgb(32, 33, 36);
+            padding: 50px 250px;
+            text-align: justify;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        #container4>p {
+            width: 70%;
+            font-size: 12px;
+        }
+
+        #boxes4 {
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .cards4 {
+            width: 18%;
+        }
+
+        ul>p {
+            font-size: 14px;
+        }
+
+        #lastbox4 {
+            display: flex;
+            /* border: 1px solid green; */
+            height: 50px;
+            margin-top: 60px;
+        }
+
+        .section4 {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 75%;
+            margin-right: 80px;
+        }
+
+        .section4>div:hover {
+            text-decoration: underline;
+        }
+
+        .section4>div {
+            width: 19%;
+            margin-right: 5px;
+            border-right: 1px solid gray;
+        }
+
+        .section4>:nth-child(5) {
+            border-right: none;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            #boxes4 {
+                flex-direction: column;
+            }
+
+            .cards4 {
+                width: 100%;
+                height: 18px;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .cards4:nth-child(1) {
+                height: 150px;
+                margin-left: -60px;
+
+            }
+
+            i {
+                margin-right: 2px
+            }
+
+            #container44 {
+                flex-direction: column;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar4">
+        <button id="gobackmenu" onclick="backtomenu()">Back to Menu</button>
+        <a href="index.html"><img src="images\Nav KFC.jpg"></a>
+        <button id="login" onclick="loginPage()"><i class="far fa-user-circle fa-2x"></i></button>
+    </div>
+    <div id="locbar4"><span style="color: red;"><i class="fas fa-map-marker-alt"></i></span> Start an order for Pickup
+        Delivery</div>
+    <img class="threelines" src="images\KFC navlines.jpg">
+    <h1>MY BAG</h1>
+    <div id="container44">
+        <div id="leftdiv"></div>
+        <div id="rightdiv4">
+            <table>
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td class="subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td class="tax">lmno</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Total</td>
+                        <td class="estimated">lmno</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="checkoutbutton" style="width: 100%;" onclick="paymentfunction()"> CHECKOUT</button>
+        </div>
+    </div>
+    <!-- Addons -->
+
+    <!-- Bottom panel -->
+    <div id="container4">
+        <p>Calorie Statement</p>
+        <p>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition
+            information available upon request in-store and on kfc.com. Prices, participation, and product availability
+            may vary.</p>
+        <br>
+        <p>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Sierra Mist are registered trademarks of PepsiCo, Inc.
+            Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</p>
+        <br>
+        <div id="boxes4">
+            <div class="cards4">
+                <img src="images\Screenshot (74).jpg">
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>KFC Food</p>
+                    <li>Menu</li>
+                    <li>Full Nutrition Guide</li>
+                    <li>Nutrition Calculator</li>
+                    <li>Food Allergies & Sensitivities</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Company</p>
+                    <li>About KFC</li>
+                    <li>How We Make Chicken</li>
+                    <li>KFC Foundation</li>
+                    <li>Company Responsibility</li>
+                    <li>Franchise a KFC</li>
+                    <li>Resposible Disclosure</li>
+                    <li>KFC Newsroom</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Career</p>
+                    <li>Restaurant Careers</li>
+                    <li>Corporate Careers</li>
+                    <li>Culture</li>
+                    <li>Growth</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Resources</p>
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>KFC App</li>
+                </ul>
+            </div>
+            <div class="cards4">
+                <ul>
+                    <p>Find a KFC</p>
+                    <li>Find a KFC</li>
+                </ul>
+            </div>
+        </div>
+        <div id="lastbox4">
+            <div class="section4">
+                <div>
+                    <p>Privacy Policy </p>
+                </div>
+                <div>
+                    <p>Update 12/2021</p>
+                </div>
+                <div>
+                    <p>Terms Of Use</p>
+                </div>
+                <div>
+                    <p>Our Cookies & Ads</p>
+                </div>
+                <div>
+                    <p>Do Not Sell My Personal Information</p>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+            </div>
+            <div style="display: flex;">
+                <i class="fab fa-instagram" style="margin-right: 3px;"></i>
+                <i class="fab fa-facebook" style="margin-right: 3px;"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div style="border-left:gray;">
+            <p> Asessibility Statement</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    //---------------------------------------------------------------------------------------------------------function buttons
+    document.querySelector("#gobackmenu").addEventListener("click", backtomenu);
+    function backtomenu() {
+        window.location.href = "homepage.html"
+    }
+    document.querySelector("#login").addEventListener("click", loginPage);
+    function loginPage() {
+        window.location.href = "login.html"
+    }
+    //-------------------------------------------------------------------------------------------------------------
+    // For checkout button:
+
+    document.querySelector("#checkoutbutton").addEventListener("click", paymentfunction);
+    function paymentfunction() {
+        var final = localStorage.getItem("totalcartvalue")
+        if (final != 0) {
+            window.location.href = "checkoutkfc.html";
+        }
+        else {
+            alert("Please Add something in your cart ");
+        }
+    }
+    //-----------------------------------------------------------------------------------------------------------------
+    // For cart display:
+
+    var cartarray = JSON.parse(localStorage.getItem("cartdata")) || [];
+    var nos = cartarray.length;
+    document.querySelector("thead").textContent = `${nos} ITEM`
+
+    var subtotal = cartarray.reduce(function (ac, el) {
+        return ac + Number(el.price);
+    }, 0);
+    document.querySelector(".subtotal").textContent = `$ ${subtotal.toFixed(2)}`
+
+    var tax = subtotal * (0.12);
+    document.querySelector(".tax").textContent = `$ ${tax.toFixed(2)}`
+
+    var estimated = tax + subtotal
+    document.querySelector(".estimated").textContent = `$ ${estimated.toFixed(2)}`
+    localStorage.setItem("totalcartvalue", estimated)
+    createContent(cartarray);
+    function createContent(cartarray) {
+        // console.log(cartarray);
+        document.querySelector("#leftdiv").textContent = "";
+        cartarray.map(function (elem, index) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box44")
+
+            var image = document.createElement("img")
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "100%";
+            image.style.width = "30%";
+
+            var name = document.createElement("h3");
+            name.textContent = elem.name;
+            name.style.marginTop = "40px"
+
+            // var calories = document.createElement("p");
+            // calories.textContent = elem.calories;
+            // calories.style.marginTop = "40px"
+
+            var price = document.createElement("h3");
+            price.textContent = `$${elem.price}`;
+            price.style.marginTop = "40px"
+
+            var remove = document.createElement("button");
+            remove.textContent = "Remove";
+            remove.style.marginTop = "35px"
+            remove.setAttribute("class", "functionbutton")
+            remove.addEventListener("click", function () {
+                removeFunction(index);
+            });
+
+
+            box.append(image, name, price, remove);
+            document.querySelector("#leftdiv").append(box);
+        })
+    }
+
+    //     else{
+    //         createemptyContent(cartarray);
+    //         function createemptyContent(cartarray) {
+    //             var check = document.createElement("h1").textContent = "Empty bag";
+
+    //             document.querySelector("#leftdiv").append(check);
+    //         }
+    //     }
+    // }
+    //-----------------------------------------------------------------------------------------------------------------------
+    //Remove/delete Function:
+
+    function removeFunction(index) {
+        cartarray.splice(index, 1);
+        console.log(index);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray));
+        createContent(cartarray);
+        // console.log(cartarray);
+        var nos = cartarray.length;
+        localStorage.setItem("nos", nos);
+        document.querySelector("thead").textContent = `${nos} ITEM`
+
+        var subtotal = cartarray.reduce(function (ac, el) {
+            return ac + Number(el.price);
+        }, 0);
+        document.querySelector(".subtotal").textContent = `$ ${subtotal.toFixed(2)}`
+
+        var tax = subtotal * (0.12);
+        document.querySelector(".tax").textContent = `$ ${tax.toFixed(2)}`
+
+        var estimated = tax + subtotal
+        document.querySelector(".estimated").textContent = `$ ${estimated.toFixed(2)}`
+        localStorage.setItem("totalcartvalue", estimated)
+        
+    }
+</script>

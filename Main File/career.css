@@ -1,0 +1,472 @@
+  * {
+    
+       margin: 0; 
+       padding : 0;
+       font-family: Arial, Helvetica, sans-serif;
+
+    }
+    /* -------------------------------------------------------------------------------------------------------main content */
+
+    #container2 {
+                 margin: auto;
+                 border : 1px solid rgb(241, 234, 234);
+                 width: 100%;
+    }
+
+     .box2_1{
+              background-color: #202124;
+              /* border : 1px solid green; */
+              width: 100%;
+              height: 40px;  
+              color: white;    
+              text-align: center;
+              padding-top: 15px;
+     }
+
+     .box2_2{
+             border : 1px solid black;
+             width: 100%;
+             height: 400px;
+             background-image: url("https://images.ctfassets.net/9tka4b3550oc/5tRiGfQXCdlrlRXDVPWdYT/79fca81cf69dad4129d7f6c0e9c873f9/hero-careers.jpg?w=1900");
+             color: black;
+             font-weight: bolder;
+             opacity: 85%;
+             text-align: center;
+            }
+    #text2 {
+             margin-top: 150px; 
+    }   
+   #text2 > h1{
+      font-size: 40px;
+    }
+    
+   .box2_3{
+              background-color: #202124;
+              /* border: 1px solid gold; */
+              width: 100%;
+              height: 40px;
+              color: white;
+              display : flex;
+              justify-content: space-between;
+              padding:20px 0 0 0px;
+            }
+     a{
+         color:white;
+     }
+    .left2{
+          /* border: 1px solid green; */
+          width: 50%;
+          text-align: center;
+         }
+    .right2{
+        /* border: 1px solid green; */
+        display:flex;
+        justify-content: space-around;
+        width: 50%;
+        margin-right: 300px;
+        
+    }
+
+    .box2_4{
+             border: 0.1px solid rgb(244, 241, 247);
+             width: 100%;
+             height: 650px;
+             background-image: url("map.PNG");
+          }
+    #box2_4_1{
+              background-color: #f8f7f5;
+              width: 22%;
+              height: 500px;
+              margin-left: 280px;
+              margin-top: 65px;
+              font-size: 25px;
+              font-weight:1000;
+              padding-left: 50px;
+    } 
+   #country{
+         width: 79%;
+         border-radius: 10px;
+         padding: 5px;
+   }
+    #add  {
+            width: 76%;
+            border-radius: 10px;
+            padding: 5px;
+  }  
+ #submit{
+         width: 40%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: large;
+        border-radius: 18px;
+
+}
+
+   .box2_5{
+            /* border: 1px solid rgb(14, 228, 121); */
+            width: 100%;
+            height: 800px;
+            margin-top: 100px;
+         }
+    #box2_5_mini_1{
+                   /* border: 1px solid purple; */
+                   width: 60%;
+                   height: 100px;
+                   margin-left: 300px;
+    }
+   
+   #box2_5_mini_2{
+                 /* border: 1px solid rgb(45, 0, 128); */
+                 width: 84%;
+                 height: 555px;
+                 display: flex;
+                 margin-left: 300px;  
+                 color: white;
+                 font-weight:bolder;
+              }
+
+   #box2_5_mini_2_1{
+                   /* border: 1px solid red;  */
+                   width:25%;
+                   background-image: url("https://images.ctfassets.net/9tka4b3550oc/2gCjL7qPDqysOrgf3H9vAA/71487ce4241a79c730cafe3e4b312f84/cook.jpg?w=470");
+                   position: relative;
+                }
+      #box2_5_mini_2_1 > div {
+                              position: absolute;
+                              bottom: 52px;
+                               left: 16px;
+}
+   #box2_5_mini_2_2{
+                   /* border: 1px solid red; */
+                   width:25%;
+                   margin-left: 20px;
+                   background-image: url("https://images.ctfassets.net/9tka4b3550oc/3kEbJ6F1XBJUd1sa4dzhH2/2fce139fc9a6b19a4c4651062d811b16/kfc_customer_sevice.jpg?w=470");
+                   position: relative;
+                }
+   #box2_5_mini_2_2 > div {
+                        position: absolute;
+                        bottom: 52px;
+                        left: 16px;
+   }
+    #box2_5_mini_2_3{
+                    /* border: 1px solid red; */
+                    width:25%;
+                    margin-left: 20px;
+                    background-image: url("https://images.ctfassets.net/9tka4b3550oc/4xLm9Q4797pqf7HpmC4saD/5802b9d05723df5b29e017c1510d5a97/shift-supervisor.jpg?w=470");
+                    position: relative;
+                }
+  #box2_5_mini_2_3 > div {
+                       position: absolute;
+                       bottom: 52px;
+                       left: 16px;
+  }
+  #box2_5_mini_2_4{
+                  /* border: 1px solid red; */
+                  width:25%;
+                  margin-left: 20px;
+                  background-image: url("https://images.ctfassets.net/9tka4b3550oc/4HnWhgDCm3rJh0vBgiTPI0/49e7a06a569b3bee25d3af2382795885/assistant-manager.jpg?w=470");
+                  position: relative;
+                }
+ #box2_5_mini_2_4 > div {
+                       position: absolute;
+                       bottom: 52px;
+                       left: 16px;
+ }
+   #box2_5_mini_3{
+                 /* border: 5px solid rgb(141, 221, 13); */
+                 background-color: black;
+                 width: 60%;
+                 height: 3px;
+                 margin-top: 35px;
+                 margin-left: 300px;
+    }
+
+   .box2_6{
+             /* border: 5px solid rgb(30, 33, 43); */
+             width: 100%;
+             height: 800px;
+            
+         }
+
+   #box2_6_mini_1{
+               /* border: 5px solid rgb(11, 14, 185); */
+               width: 60%;
+               height: 220px;
+               margin-left: 300px;
+               
+            }
+
+   #box2_6_mini_2{
+                    /* border: 5px solid rgb(185, 11, 40); */
+                    width:  60%;
+                    height: 550px;
+                    margin-left: 300px;
+              }
+    p{
+        color: grey;
+    }
+    h5,h1,h3{
+              font-weight: bolder;        
+    }
+
+    .box2_7{
+             /* border: 5px solid rgb(18, 53, 167); */
+             width: 60%;
+             height: 570px;
+             margin-left: 300px;
+             display :flex;
+    }
+   #box2_7_1 {
+            /* border: 1px solid rgb(29, 223, 103); */
+            width: 50%;
+            height: 570px;        
+   }
+   #box2_7_2{
+           /* border: 1px solid rgb(29, 223, 103); */
+           width: 50%;
+           height: 500px;
+           margin-left:80px;
+           margin-top: 60px;  
+   }
+
+   .box2_8{
+           /* border: 1px solid rgb(29, 223, 103); */
+           width:75%;
+           height: 550px;
+           margin-left: 300px;
+         }
+   #box2_8_1{
+            /* border: 1px solid rgb(29, 223, 103); */
+            width:100%;
+            height: 90px;
+            margin-top: 35px;
+            margin-left:130px ;
+          }
+  #box2_8_2{
+            /* border: 1px solid rgb(29, 42, 223); */
+            width:100%;
+            height: 355;
+            display:flex;
+            margin-left:130px ;
+        }
+
+  #box2_8_2_1{
+               /* border: 1px solid rgb(29, 223, 87); */
+               width:100%;
+               height: 300px;
+               padding: 20px;
+               margin-right: 25px;
+               box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+               background-color: #f8f7f5
+               
+               
+        }
+  #box2_8_3{
+        /* border: 5px solid rgb(141, 221, 13); */
+        background-color: black;
+        width: 70%;
+        height: 3px;
+        margin-top: 45px;
+        margin-left: 170px;
+}
+
+  .box2_9{
+         /* border: 5px solid rgb(18, 53, 167); */
+         width: 60%;
+         height: 528px;
+         margin-left: 300px;
+         display :flex;
+         margin-top: 45px;
+  }
+  #box2_9_1 {
+          /* border: 1px solid rgb(29, 223, 103); */
+          width: 50%;
+          height: 528px;        
+  }
+  #box2_9_2{
+         /* border: 1px solid rgb(29, 223, 103); */
+         width: 50%;
+         height: 400px;
+         margin-left:80px;
+         margin-top: 60px;  
+   }
+
+   #box2_9_2{
+          /* border: 1px solid rgb(29, 223, 103); */
+          width: 50%;
+          height: 400px;
+          margin-left:80px;
+          margin-top: 60px;  
+         }
+  .box2_10{
+            border: 0.1px solid rgb(233, 232, 231);
+            width: 100%;
+            height: 950px;
+            margin-top: 25px;
+            background-image: url("https://images.ctfassets.net/9tka4b3550oc/51fyOnDnrgeXWqP1B2Zsih/7d9b6da24b0c8ba9e84fcb2342539bda/banner-card-corporate-careers.jpg?q=75&w=1900");
+          }
+  .box2_10 > div{
+                background-color: #f8f7f5;
+                width: 22%;
+                height: 500px;
+                margin-left: 1000px;
+                margin-top: 200px;
+                padding: 0 50px;
+      } 
+  #learn{
+        width: 40%;
+       height: 40px;
+       background-color: red;
+       color: white;
+       font-weight: bolder;
+       border-radius: 18px;
+  }*
+  .box2_11{
+            /* border: 1px solid rgb(7, 23, 116); */
+            width: 55%;
+            height: 150px;
+            padding: 100px 0px  0 25px;
+            font-size: large;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            margin-left: 500px;
+            color: rgb(90, 85, 85);
+          }
+  .box2_12{
+            /* border:1px solid rgb(50, 18, 167); */
+            width: 100%;
+            height: 560px;
+            /* margin-left: 500px; */
+          }  
+  #box2_12_1{
+            /* border: 1px solid rgb(18, 167, 43); */
+            width: 98%;
+            height: 100px;
+            margin-left: 300px;
+          }
+   #box2_12_2{
+                /* border: 1px solid rgb(40, 33, 58); */
+                width: 60%;
+                height: 380px;
+                display: flex;
+                margin-left: 300px;
+                color: white;
+              }       
+  #box2_12_2_1{
+            /* border: 1px solid rgb(58, 18, 167); */
+            width: 50%;
+            height: 380px;
+            background: url("https://images.ctfassets.net/9tka4b3550oc/4Ib0hIQA7tdYuV3oBHHzqY/e1ad0a11c544279e1895f42eb72df68f/routing-careers-culture.jpg?w=640");
+            position: relative;
+            margin-right: 35px;
+            
+        } 
+  #box2_12_2_1> div {
+                /* position: absolute; */
+                bottom: 150px;
+                left: 220px;
+               
+}
+        
+
+  #box2_12_2_2{
+             /* border: 1px solid rgb(58, 18, 167); */
+             width: 50%;
+             height: 380px;
+             background: url("https://images.ctfassets.net/9tka4b3550oc/50tkcHRFTh0VgPIlhPRpIF/d28c820fc7f7bbbd26ae6ad1ad832cbe/routing-careers-growth.jpg?w=640")no-repeat;
+             background-size: cover;
+             position: relative;
+             
+        } 
+  #box2_12_2_2> div {
+                position: absolute;
+                bottom: 150px;
+                left: 75px;
+  }
+  #box2_12_2_1> div >h2{
+          margin: 40% 30%;
+  }
+   /* --------------------------------------------------------------bottom panel */
+   #container44 {
+        background-color: rgb(32, 33, 36);
+        padding: 50px 250px;
+        text-align: justify;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+    }
+
+    #container44 p {
+        width: 70%;
+        font-size: 12px;
+        color: white;
+    }
+
+    #boxes44 {
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    li:hover {
+        text-decoration: underline;
+    }
+
+    .cards44 {
+        width: 18%;
+        /* background-color: yellow; */
+    }
+
+    ul p {
+        font-size: 14px;
+    }
+
+    #lastbox44 {
+        display: flex;
+        /* border: 1px solid green; */
+        height: 50px;
+        margin-top: 60px;
+    }
+
+    .section44 {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 75%;
+        margin-right: 80px;
+    }
+
+    .section44>div:hover {
+        text-decoration: underline;
+    }
+
+    .section44>div {
+        width: 19%;
+        margin-right: 5px;
+        border-right: 1px solid gray;
+    }
+
+    .section44>:nth-child(5) {
+        border-right: none;
+    }
+ 
+ 
+
+
+
+
+
+
+
+
+

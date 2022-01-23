@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        /* ---------------------------------------------------------------------------------------------------nav bar */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            /* position: sticky; */
+            top: 0;
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding-bottom: 25px;
+        }
+
+        .box1_5 {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 17%;
+        }
+
+        .box2_5 {
+            width: 33%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img_align {
+            vertical-align: top;
+            height: 25px;
+            margin-top: -4px;
+        }
+
+        .box1_5>a {
+            text-decoration: none;
+            vertical-align: top;
+            font-family: sans-serif;
+            padding-top: 15px;
+            margin-top: 0px;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .box1_5>a:hover {
+            text-decoration: underline;
+        }
+
+        .box2_5>button:hover {
+            background-color: #d40d31;
+        }
+
+        .btn-class {
+            padding: 12px 42px;
+            border-radius: 25px;
+            border: 0px;
+            background-color: #E4002B;
+            color: white;
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .fas_size {
+            margin: 5px 0px;
+            width: 55px;
+            cursor: pointer;
+        }
+
+        .icon-border {
+            border-right: 1px solid silver;
+            height: 30px;
+
+        }
+
+        .nav-bottom {
+            display: flex;
+            background-color: #202124;
+            color: white;
+            justify-content: center;
+            height: 44px;
+            cursor: pointer;
+        }
+
+        .nav-bottom:hover {
+            background-color: #303133;
+        }
+
+        .nav-bottom>.para {
+            margin-top: 12px;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        .nav-bottom>.location {
+            width: 20px;
+            margin-top: 9px;
+            color: #E4002B;
+        }
+
+        .nav-top {
+            width: 85%;
+            height: 28px;
+            margin: auto;
+            margin-top: -6px;
+        }
+
+        .nav-top>img {
+            margin-left: 1.65%;
+        }
+
+        #mobile_nav {
+            display: none;
+        }
+
+        .nav-bottom>a {
+            display: none;
+        }
+
+        /* ----------------------------------------media query------------------------------------------------------ */
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            nav {
+                display: none;
+            }
+
+            .nav-top {
+                display: none;
+            }
+
+            #mobile_nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 44px;
+            }
+
+            #mobile_nav>a {
+                color: black;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .nav-bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav-bottom>.para {
+                margin-top: 1px;
+            }
+
+            .nav-bottom>.location {
+                margin-left: 5%;
+                margin-top: 0px;
+
+            }
+
+            .nav-bottom>a {
+                display: block;
+                margin-right: 5%;
+                color: white;
+            }
+
+        }
+
+
+
+        /* -------------------------------------------------------------------------------------------------------main content */
+
+        #main {
+            display: flex;
+            width: 75%;
+            margin: auto;
+            z-index: 1;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #c6,
+        #co6,
+        #con6,
+        #cont6,
+        #conta6,
+        #contai6,
+        #contain6,
+        #containe6,
+        #container6,
+        #container6c,
+        #container6co,
+        #container6con {
+            width: 100%;
+            /* margin-left: 600px; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            /* border: 1px solid red; */
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        img {
+            background-color: rgb(248, 247, 245)
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: bolder;
+            /* margin-left: 600px; */
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        #flex4 {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+        }
+
+        button {
+            border-radius: 20px;
+            color: white;
+            border: none;
+            background-color: rgb(228, 0, 43);
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(204, 6, 42)
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        #left {
+            width: 20%;
+            /* position: fixed; */
+            margin-right: 10px
+                /* background-color: white; */
+        }
+
+        /* ---------------------------------------------------------------------------main screen media query */
+        @media only screen and (min-width:451px) and (max-width:1024px) {
+            #left {
+                display: none;
+            }
+
+            #right h1 {
+                display: none;
+            }
+
+            #c6,
+            #co6,
+            #con6,
+            #cont6,
+            #conta6,
+            #contai6,
+            #contain6,
+            #containe6,
+            #container6,
+            #container6c,
+            #container6co,
+            #container6con {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:450px) {
+            #left {
+                display: none;
+            }
+
+            #right h1 {
+                display: none;
+            }
+
+            #c6,
+            #co6,
+            #con6,
+            #cont6,
+            #conta6,
+            #contai6,
+            #contain6,
+            #containe6,
+            #container6,
+            #container6c,
+            #container6co,
+            #container6con {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* ---------------------------------------------------------------------------------------------------- */
+
+        #right {
+            width: 78%;
+            margin-top: 60px;
+            margin: 0 0 0 5%;
+
+        }
+
+        /* #right h1{
+           display: none;
+        } */
+
+        p {
+            font-size: 20px;
+
+        }
+
+        p:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        #nav-top {
+            height: 10%;
+            width: 100%;
+
+        }
+
+        /* --------------------------------------------------------------bottom panel */
+        footer {
+            width: 100%;
+            position: absolute;
+        }
+
+        #container44 {
+            background-color: rgb(32, 33, 36);
+            padding: 50px 250px;
+            text-align: justify;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 150px;
+        }
+
+        #container44 p {
+            width: 70%;
+            font-size: 12px;
+            color: white;
+        }
+
+        #boxes44 {
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        li:hover {
+            text-decoration: underline;
+        }
+
+        .cards44 {
+            width: 18%;
+            /* background-color: yellow; */
+        }
+
+        ul p {
+            font-size: 14px;
+        }
+
+        #lastbox44 {
+            display: flex;
+            /* border: 1px solid green; */
+            height: 50px;
+            margin-top: 60px;
+        }
+
+        .section44 {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 75%;
+            margin-right: 80px;
+        }
+
+        .section44>div:hover {
+            text-decoration: underline;
+        }
+
+        .section44>div {
+            width: 19%;
+            margin-right: 5px;
+            border-right: 1px solid gray;
+        }
+
+        .section44>:nth-child(5) {
+            border-right: none;
+        }
+
+        .threelines {
+            margin-left: 12%;
+        }
+
+        #noofcartitem {
+            margin-left: -18%;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:1024px) {
+            #boxes44 {
+                flex-direction: column;
+            }
+
+            .cards44 {
+                width: 100%;
+                height: 40px;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .cards44:nth-child(1) {
+                height: 150px;
+                margin-left: -60px;
+
+            }
+
+            i {
+                margin-right: 2px
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------------------------------nav bar -->
+    <header>
+        <div id="mobile_nav">
+            <a href=""><i class="fas fa-bars fa-1x"></i></a>
+            <a href="index.html"><img src="images\kfc.jpeg" alt="kfc"></a>
+            <a href="cart.html"><i class="fas fa-shopping-bag fa-1x "></i></a>
+        </div>
+        <div class="nav-top">
+            <img src="images\KFC navlines.jpg" alt="lines" style="height: 80%; width: 4%;">
+        </div>
+        <nav>
+            <div class="box1_5">
+                <a href="index.html"><img class="img_align" src="images\Nav KFC.jpg" alt="chicken"></a>
+                <a href="homepage.html">Menu</a>
+                <a href="career.html">Careers</a>
+                <a href="About.html">About</a>
+                <a href="findkfc.html">Find a KFC®</a>
+            </div>
+            <div class="box2_5">
+                <button class="btn-class">Start Order</button>
+                <i id="login" onlick="loginPage()" class="fas fa-user-circle fa-2x icon-border fas_size"></i>
+                <i id="cart" onlick="cartPage()" class="fas fa-shopping-bag fa-2x "></i>
+                <h6 id="noofcartitem"></h6>
+            </div>
+        </nav>
+        <div class="nav-bottom">
+            <div class="location"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="para">Start an Order for Pickup or Delivery</div>
+            <a href=""><i class="fas fa-caret-down"></i></a>
+        </div>
+    </header>
+    </div>
+    <img class="threelines" src="images\KFC navlines.jpg">
+
+    <!-- ----------------------------------------------------------------------------Main Content -->
+    <div id="main">
+
+        <div id=left>
+
+            <h1>KFC® MENU</h1>
+            <p>Featured</p>
+            <p>Beyond Fried Chicken</p>
+            <p>Buckets</p>
+            <p>Tenders</p>
+            <p>Sandwiches</p>
+            <p>Fried Chicken</p>
+            <p>Pot Pies & Bowls</p>
+            <p>A La Carte</p>
+            <p>Sides</p>
+            <p>Sauces</p>
+            <p>Desserts</p>
+            <p>Drinks</p>
+        </div>
+
+        <div id=right>
+            <br>
+            <br>
+            <br>
+            <h1>FEATURED</h1>
+            <div id="conta6">
+            </div>
+            <br>
+            <h1>BEYOND FRIED CHICKEN</h1>
+            <div id="contai6">
+            </div>
+            <br>
+
+            <h1>BUCKETS</h1>
+            <div id="contain6">
+            </div>
+            <br>
+            <br>
+            <h1>TENDERS</h1>
+            <div id="containe6">
+            </div>
+            <br>
+            <h1>SANDWICHES</h1>
+            <div id="c6">
+            </div>
+            <br>
+            <br>
+            <h1> FRIED CHICKEN</h1>
+            <div id="co6">
+            </div>
+            <br>
+            <br>
+
+            <h1>POT PIES AND BOWLS</h1>
+            <div id="con6">
+            </div>
+            <br>
+            <br>
+            <h1> A LA CARTE</h1>
+            <div id="cont6">
+            </div>
+            <br>
+            <br>
+            <h1> SIDES</h1>
+            <div id="container6">
+            </div>
+            <br>
+            <br>
+            <h1> SAUCES</h1>
+            <div id="container6c">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1>DESSERTS </h1>
+            <div id="container6co">
+            </div>
+            <br>
+            <br>
+
+            <h1> DRINKS</h1>
+            <div id="container6con">
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------Bottom Panel----------------------------------------------- -->
+    <footer>
+        <div id="container44">
+            <p>Calorie Statement</p>
+            <p>2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition
+                information available upon request in-store and on kfc.com. Prices, participation, and product
+                availability
+                may vary.</p>
+            <br>
+            <p>Pepsi, Pepsi Globe, Mtn Dew, Mtn Dew Sweet Lightning, Sierra Mist are registered trademarks of PepsiCo,
+                Inc.
+                Dr Pepper is a registered trademark of Dr Pepper/Seven Up, Inc.</p>
+            <br>
+            <div id="boxes44">
+                <div class="cards44">
+                    <img src="images\Screenshot (74).jpg">
+                </div>
+                <div class="cards4">
+                    <ul>
+                        <p>KFC Food</p>
+                        <li>Menu</li>
+                        <li>Full Nutrition Guide</li>
+                        <li>Nutrition Calculator</li>
+                        <li>Food Allergies & Sensitivities</li>
+                    </ul>
+                </div>
+                <div class="cards44">
+                    <ul>
+                        <p>Company</p>
+                        <li>About KFC</li>
+                        <li>How We Make Chicken</li>
+                        <li>KFC Foundation</li>
+                        <li>Company Responsibility</li>
+                        <li>Franchise a KFC</li>
+                        <li>Resposible Disclosure</li>
+                        <li>KFC Newsroom</li>
+                    </ul>
+                </div>
+                <div class="cards44">
+                    <ul>
+                        <p>Career</p>
+                        <li>Restaurant Careers</li>
+                        <li>Corporate Careers</li>
+                        <li>Culture</li>
+                        <li>Growth</li>
+                    </ul>
+                </div>
+                <div class="cards44">
+                    <ul>
+                        <p>Resources</p>
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                        <li>KFC App</li>
+                    </ul>
+                </div>
+                <div class="cards44">
+                    <ul>
+                        <p>Find a KFC</p>
+                        <li>Find a KFC</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lastbox44">
+                <div class="section44">
+                    <div>
+                        <p>Privacy Policy </p>
+                    </div>
+                    <div>
+                        <p>Update 12/2021</p>
+                    </div>
+                    <div>
+                        <p>Terms Of Use</p>
+                    </div>
+                    <div>
+                        <p>Our Cookies & Ads</p>
+                    </div>
+                    <div>
+                        <p>Do Not Sell My Personal Information</p>
+                    </div>
+                </div>
+                <div>
+                    <p>Copyright © KFC Corporation 2022 All Rights Reserved</p>
+                </div>
+                <div style="display: flex;">
+                    <i class="fab fa-instagram" style="margin-right: 3px;"></i>
+                    <i class="fab fa-facebook" style="margin-right: 3px;"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div style="border-left:gray;">
+                <p> Asessibility Statement</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
+<script>
+    //--------------------------------------------------------------------------------------function buttons
+
+    document.querySelector("#login").addEventListener("click", loginPage);
+    function loginPage() {
+        window.location.href = "login.html"
+    }
+
+    document.querySelector("#cart").addEventListener("click", cartPage);
+    function cartPage() {
+        window.location.href = "cart.html"
+    }
+
+    //---------------------------------------------------------------------------------------------//1
+    var FEATURED = [
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-sideslovers3sides?q=75",
+            name: "Side Lovers Meal",
+            cal: "calories: 2580-5640",
+            price: 22.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-beyond12pcnuggetscombo?q=75",
+            name: "12 pc. Beyond Nuggets Combo",
+
+            price: 11.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealStandard?q=75",
+            name: "8 pc. Meal",
+            cal: "calories: 2300-4980",
+            price: 27.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75",
+            name: "KFC Chicken Sandwich Combo",
+            cal: "calories: 690-1160",
+            price: 7.49,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-10pcfeast?q=75",
+            name: "10 Piece Feast",
+            cal: "calories: 4140-6700",
+            price: 30.00,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowlFillUp?q=75",
+            name: "Famous Bowl Fill Up",
+            cal: "calories: 840-1120",
+            price: 7.49,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcBox2B1W?q=75",
+            name: "3 pc. Chicken Box - 2 Breasts, 1 Wing",
+            cal: "calories: 810-2150",
+            price: 10.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-5TenderCombo?q=75",
+            name: "5 pc. Tenders Combo",
+            cal: "calories: 930-1610",
+            price: 9.69,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8TendersMeal?q=75",
+            name: "8 pc. Tenders Meal",
+            calories: "calories: 2910-4930",
+            price: 19.99,
+        },
+
+    ];
+
+    localStorage.setItem("featured", JSON.stringify(FEATURED));
+    var cartarray = JSON.parse(localStorage.getItem("cartdata")) || [];
+    var nos=cartarray.length
+    document.querySelector("#noofcartitem").textContent= nos;
+   
+
+
+    var array5 = JSON.parse(localStorage.getItem("featured")) || [];
+    createTable5(array5);
+    function createTable5(array5) {
+        array5.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#conta6").append(box);
+            // console.log(array5)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray));
+        // console.log(cartdata)
+        alert("Added successfully");
+        
+    }
+    //----------------------------------------------------------------------------------------//2
+    var BEYOND_FRIED_CHICKEN = [
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-beyond6pcnuggetscombo?q=75",
+            name: "6 pc. Beyond Nuggets Combo",
+            price: 7.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-beyond12pcnuggetscombo?q=75",
+            name: "12 pc. Beyond Nuggets Combo",
+            price: 14.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-beyond6pcnuggets?q=75",
+            name: "6 pc. Beyond Nuggets",
+            price: 6.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-beyond12pcnuggets?q=75",
+            name: "12 pc. Beyond Nuggets",
+            price: 13.99,
+        },
+
+
+    ];
+    localStorage.setItem("beyond", JSON.stringify(BEYOND_FRIED_CHICKEN));
+
+    var array6 = JSON.parse(localStorage.getItem("beyond")) || [];
+    createTable6(array6);
+    function createTable6(array6) {
+        array6.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#contai6").append(box);
+            // console.log(array6)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+        
+    }
+    //------------------------------------------------------------------------------------------//3
+    var BUCKETS = [
+
+
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealStandard?q=75",
+            name: "8 pc. Meal",
+            cal: "calories: 2300-4980",
+            price: 27.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-sideslovers3sides?q=75",
+            name: "Side Lovers Meal",
+            cal: "calories: 2580-5640",
+            price: 22.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcFamilyFillUpDark?q=75",
+            name: "8 pc. Fill Up",
+            cal: "calories: 3560-4940",
+            price: 30.00,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcFamilyFillUpStandard?q=75",
+            name: "8 pc. Fill Up",
+            cal: "calories: 3560-4940",
+            price: 24.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketStandard?q=75",
+            name: "8 pc. Chicken Bucket",
+            cal: "calories: 1020-2400",
+            price: 24.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketDark?q=75",
+            name: "8 pc. Chicken Bucket",
+            cal: "calories: 920-2000",
+            price: 17.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcBucketMealDark?q=75",
+            name: "8 pc. Meal",
+            cal: "calories: 2200-4580",
+            price: 15.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-10pcfeast?q=75",
+            name: "8 Piece Feast",
+            cal: "calories: 4140-6700",
+            price: 25.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketMealStandard?q=75",
+            name: "12 pc. Meal",
+            cal: "calories: 3450-7470",
+            price: 30.00,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketMealDark?q=75",
+            name: "12 pc. Meal",
+            cal: "calories: 3300-6870",
+            price: 32.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketStandard?q=75",
+            name: "12 pc. Chicken Bucket",
+            cal: "calories: 1530-3600",
+            price: 30.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcBucketDark?q=75",
+            name: "12 pc. Chicken Bucket",
+            cal: "calories: 1380-3000",
+            price: 21.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketStandard?q=75",
+            name: "16 pc. Chicken Bucket",
+            cal: "calories: 2040-4800",
+            price: 19.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcBucketMealStandard?q=75",
+            name: "16 pc. Meal",
+            cal: "calories: 4600-9960",
+            price: 25.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcTenders?q=75",
+            name: "12 pc. Tenders Bucket",
+            cal: "calories: 1630-2100",
+            price: 43.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12TendersMeal?q=75",
+            name: "12 pc. Tenders Meal",
+            cal: "calories: 4610-6290",
+            price: 17.99,
+        },
+    ];
+    localStorage.setItem("buck", JSON.stringify(BUCKETS));
+
+    var array7 = JSON.parse(localStorage.getItem("buck")) || [];
+    createTable7(array7);
+    function createTable7(array7) {
+        array7.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "65%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#contain6").append(box);
+            // console.log(array7)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+        var nos = cartarray.length;
+        // console.log(nos)
+        document.querySelector("#noofcartitem").textContent = nos;
+    }
+    //----------------------------------------------------------------------------------------//4
+    var TENDERS = [
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-TendersFU?q=75",
+            name: "3 pc. Tenders Fill Up",
+            cal: "calories: 780-1340",
+            price: 7.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-TendersCombo?q=75",
+            name: "3 pc. Tenders Combo",
+            cal: "calories: 780-1340",
+            price: 8.69,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-4TendersCombo?q=75",
+            name: "4 pc. Tenders Combo",
+            cal: "calories: 790-1470",
+            price: 9.69,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-5TenderCombo?q=75",
+            name: "5 pc. Tenders Combo",
+            cal: "calories: 930-1610",
+            price: 10.49,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-5pcTendersBox?q=75",
+            name: "5 pc. Tenders Box",
+            cal: "calories: 1000-1840",
+            price: 7.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcNHTendersCombo?q=75",
+            name: "3 pc. Nashville Hot Tenders Combo",
+            cal: "calories: 920-1360",
+            price: 9.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-5pcNHTendersCombo2?q=75",
+            name: "5 pc. Nashville Hot Tenders Combo",
+            cal: "calories: 1370-1810",
+            price: 9.99,
+        },
+
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8pcTenders?q=75",
+            name: "8 pc. Tenders Bucket",
+            cal: "calories: 1630-2100",
+            price: 19.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-8TendersMeal?q=75",
+            name: "8 pc. Tenders Meal",
+            cal: "calories: 2910-4930",
+            price: 17.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12pcTenders?q=75",
+            name: "12 pc. Tenders Bucket",
+            cal: "calories: 1630-2100",
+            price: 27.59,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-12TendersMeal?q=75",
+            name: "12 pc. Tenders Bucket",
+            cal: "calories: 4610-6290",
+            price: 22.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-16pcTenders?q=75",
+            name: "16 pc. Tenders Bucket",
+            cal: "calories: 2610-4990",
+            price: 39.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-16TendersMeal?q=75",
+            name: "16 pc. Tenders Meal",
+            cal: "calories: 2910-4930",
+            price: 39.99,
+        },
+
+        {
+            image_url:
+                "https://digitaleat.kfc.com/menus/image/bare/kfc-PopcornComboFries?q=75",
+            name: "Popcorn Nuggets Combo",
+            cal: "calories: 690-1250",
+            price: 7.69,
+        },
+
+
+
+    ];
+    localStorage.setItem("tenders", JSON.stringify(TENDERS));
+
+    var array8 = JSON.parse(localStorage.getItem("tenders")) || [];
+    createTable8(array8);
+    function createTable8(array8) {
+        array8.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#containe6").append(box);
+            // console.log(array8)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+        
+    }
+
+    //-------------------------------------------------------------------------------------//5
+    var SANDWICHES = [
+
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndcombo?q=75&w=1280",
+            name: "KFC Chicken Sandwich Combo",
+            calories: "calories- 690-1160",
+            price: 7.49,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndbigbox?q=75&w=1280",
+            name: "KFC Chicken Sandwich Box",
+            calories: "calories: 830-1620",
+            price: 9.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-cknsndalc?q=75&w=1280",
+            name: "KFC Chicken Sandwich",
+            calories: " calories: 620-650",
+            price: 3.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcChLtl?q=75&w=1280",
+            name: "Chicken Little",
+            calories: "calories- 300-540",
+            price: 2.29,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-ChLtlCombo?q=75&w=1280",
+            name: " Chicken Little Combo",
+            calories: "calories- 670-1190",
+            price: 7.39,
+        }
+    ]
+    localStorage.setItem("sand", JSON.stringify(SANDWICHES));
+
+    var array1 = JSON.parse(localStorage.getItem("sand")) || [];
+    createTable1(array1);
+    function createTable1(array1) {
+        array1.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#c6").append(box);
+            // console.log(array1)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //-------------------------------------------------------------------------------------------------//6
+    var FRIED_CHICKEN = [
+
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-1BrFU?q=75&w=1280",
+            name: "1pc.Breast Combo",
+            calories: "calories- 580-1340",
+            price: 7.49,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-2DTFU?q=75&w=1280",
+            name: "2pc.Drum & Thick Full Up",
+            calories: "calories- 600-1310",
+            price: 7.49,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-2DTCombo?q=75&w=1280",
+            name: "2pc.Drum & Thick Combo",
+            calories: "calories- 600-1310",
+            price: 8.49,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-2BWCombo?q=75&w=1280",
+            name: "2 pc. Chicken Combo - Breast & Wing",
+            calories: "calories- 530-1390 ",
+            price: 9.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75&w=1280",
+            name: " 3 pc. Chicken Combo- 2 Breasts, 1 Wings",
+            calories: "calories- 740-1920",
+            price: 8.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo2T1D?q=75&w=1280",
+            name: " 3 pc. Chicken Combo - 2 Thighs, 1 Drum",
+            calories: "calories- 630-1520",
+            price: 9.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcCombo1B1T1W?q=75&w=1280",
+            name: " 3 PC. Chicken Combo - Breast, Thing, And Wing",
+            price: 10.99,
+
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcBox2B1W?q=75&w=1280",
+            name: " 3 PC. Chicken Box - 2 Breasts, 1 Wing",
+            calories: "calories- 810-2150",
+            price: 9.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-3pcBox2T1D?q=75&w=1280",
+            name: " 3 PC. Chicken Box - 2 Things, 1 Drum",
+            calories: "calories-  700-1750",
+            price: 9.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-4pcCombo?q=75&w=1280",
+            name: "4 pc. Chicken Combo ",
+            calories: "calories- 760-1890",
+            price: 8.29,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-6WingsUnsauced?q=75&w=1280",
+            name: "Kentucky Fried Wings Combo",
+            calories: "calories- 650-1380",
+            price: 9.63,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-48WingsUnsauced?q=75&w=1280",
+            name: "48 Kentucky Fried Wings ",
+            calories: "calories- 4640-7040",
+            price: 5.36,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-24WingsUnsauced?q=75&w=1280",
+            name: "24 Kentucky Fried Wings ",
+            calories: "calories- 2320-3250",
+            price: 3.8,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-12WingsUnsauced?q=75&w=1280",
+            name: "12 Kentucky Fried Wings ",
+            calories: "calories- 1160-1760",
+            price: 9.76,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-12WingsUnsauced?q=75&w=1280",
+            name: "12 Kentucky Fried Wings ",
+            calories: "calories- 1160-1760",
+            price: 5.36,
+        }
+    ]
+    localStorage.setItem("fried", JSON.stringify(FRIED_CHICKEN));
+
+    var array2 = JSON.parse(localStorage.getItem("fried")) || [];
+    createTable2(array2);
+    function createTable2(array2) {
+        array2.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "65%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#co6").append(box);
+            // console.log(array2)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //---------------------------------------------------------------------------------------------//7
+    var POT_PIES_and_BOWLS = [
+
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowlFillUp?q=75&w=1280",
+            name: "Famous Bowl Fill Up",
+            calories: "calories- 840-1120",
+            price: 7.49,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-PotPieFillUp?q=75&w=1280",
+            name: "Pot Pie Fill Up",
+            calories: "calories- 840-1120",
+            price: 7.49,
+        }
+
+    ]
+    localStorage.setItem("pies", JSON.stringify(POT_PIES_and_BOWLS));
+
+    var array3 = JSON.parse(localStorage.getItem("pies")) || [];
+    createTable3(array3);
+    function createTable3(array3) {
+        array3.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "65%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#con6").append(box);
+            // console.log(array3)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //---------------------------------------------------------------------------------------------------//8
+
+    var A_LA_CARTE = [
+
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcBreast?q=75&w=1280",
+            name: "A La Carte Breast",
+            calories: "calories-  210-530",
+            price: 2.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcLeg?q=75&w=1280",
+            name: "A La Carte Drum",
+            calories: "calories- 80-170",
+            price: 1.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcThigh?q=75&w=1280",
+            name: "A La Carte Thing",
+            calories: "calories- 150-330",
+            price: 2.09,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcWing?q=75&w=1280",
+            name: "A La Carte Wing",
+            calories: "calories- 70-170",
+            price: 1.59,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-AlcTender2?q=75&w=1280",
+            name: " A La Carte Tender",
+            calories: "calories- 390-530",
+            price: 1.45,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-FamousBowl?q=75&w=1280",
+            name: "Famous Bowl",
+            calories: "calories- 840-1120",
+            price: 4.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-PotPie?q=75&w=1280",
+            name: " Pot Pie",
+            calories: "calories- 720",
+            price: 4.99,
+        }
+    ]
+    localStorage.setItem("alacarte", JSON.stringify(A_LA_CARTE));
+
+    var array4 = JSON.parse(localStorage.getItem("alacarte")) || [];
+    createTable4(array4);
+    function createTable4(array4) {
+        array4.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "70%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`;
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#cont6").append(box);
+            // console.log(array4)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //----------------------------------------------------------------------------------------//9
+    var SIDES = [
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndFries?q=75&w=1280",
+            name: "Secret Recipe Fries",
+            calories: "calories- 230-930",
+            price: 2.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMashGravy?q=75&w=1280",
+            name: "Mashed Potatoes & Greavy",
+            calories: "calories- 130-590",
+            price: 2.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMacCheese?q=75&w=1280",
+            name: "Mac & Cheese",
+            calories: "calories- 140-540",
+            price: 2.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-biscuit?q=75&w=1280",
+            name: "Biscuit",
+            calories: "calories-180",
+            price: 0.69,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndColeslaw?q=75&w=1280",
+            name: "Cole Slaw",
+            calories: "calories-170-640",
+            price: 2.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndGravy?q=75&w=1280",
+            name: "Greavy",
+            calories: "calories- 80-130",
+            price: 0.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndCorn?q=75&w=1280",
+            name: "Whole Karnel Corn",
+            calories: "calories-70-280",
+            price: 2.39,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-IndMash?q=75&w=1280",
+            name: "Mashed Potatoes (No Gravy)",
+            calories: "calories- 110-460",
+            price: 2.39,
+        },
+    ]
+    localStorage.setItem("sides", JSON.stringify(SIDES));
+
+    var array9 = JSON.parse(localStorage.getItem("sides")) || [];
+    createTable9(array9);
+    function createTable9(array9) {
+        array9.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "70%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`;
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#container6").append(box);
+            // console.log(array9)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //-----------------------------------------------------------------------------------------//10
+    var SAUCES = [
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-KFCSauce?q=75&w=1280",
+            name: "KFC Sauce",
+            calories: "calories- 90",
+            price: 0.25,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyBBQ?q=75&w=1280",
+            name: "Honey BBQ",
+            calories: "calories- 40",
+            price: 0.25,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyBBQ?q=75&w=1280",
+            name: "Honey Musterd",
+            calories: "calories-120",
+            price: 0.25,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-HoneyBBQ?q=75&w=1280",
+            name: "Classic Ranch",
+            calories: "calories- 100",
+            price: 1.00,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-honeySauce2?q=75&w=1280",
+            name: "Honey Sauce",
+            calories: "calories-30",
+            price: 3.21,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-hotSauce2?q=75&w=1280",
+            name: "Hot Sauce",
+            calories: "calories-0",
+            price: 3.26,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-ketchup2?q=75&w=1280",
+            name: "Ketchup",
+            calories: "calories-30",
+            price: 1.25,
+        }
+    ]
+    localStorage.setItem("sauces", JSON.stringify(SAUCES));
+
+    var array10 = JSON.parse(localStorage.getItem("sauces")) || [];
+    createTable10(array10);
+    function createTable10(array10) {
+        array10.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`;
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#container6c").append(box);
+            // console.log(array10)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //---------------------------------------------------------------------//11
+    var DESSERTS = [
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-1Cookie?q=75&w=1280",
+            name: "Chocolate Chip Cookie",
+            calories: "calories-120",
+            price: 0.59,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-CCCake?q=75&w=1280",
+            name: "Chocolate Chip Cake",
+            calories: "calories- 300",
+            price: 5.00,
+        }
+    ];
+    localStorage.setItem("desserts", JSON.stringify(DESSERTS));
+
+    var array11 = JSON.parse(localStorage.getItem("desserts")) || [];
+    createTable11(array11);
+    function createTable11(array11) {
+        array11.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`;
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#container6co").append(box);
+            // console.log(array11)
+        })
+    }
+    function addcartfunc(elem) {
+        console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+    //-------------------------------------------------------------------------------------------------//12
+    var DRINKS = [
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-Pepsi?q=75&w=1280",
+            name: "PEPSI",
+            calories: "calories-250-380",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-dietPepsi?q=75&w=1280",
+            name: "Diet Pepsi",
+            calories: "calories-0",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-mtndew?q=75&w=1280",
+            name: "Mountain Dew",
+            calories: "calories-270-410",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-mtndewsweetlightning?q=75&w=1280",
+            name: "Mountain Dew Sweet Lightning",
+            calories: "calories-160-230",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-drPepper?q=75&w=1280",
+            name: "DR. Pepper",
+            calories: "calories-240-360",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-sierramist?q=75&w=1280",
+            name: "Sierra Mist",
+            calories: "calories- 260-380",
+            price: 1.79,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-sweetTea?q=75&w=1280",
+            name: "Sweet Tea",
+            calories: "calories-280-430",
+            price: 1.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-LemMed?q=75&w=1280",
+            name: "Lemonade",
+            calories: "calories-140-210",
+            price: 2.29,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-StrLemMed?q=75&w=1280",
+            name: "Strawberry Lemonade",
+            calories: "calories- 170-260",
+            price: 3.99,
+        },
+        {
+            image_url: "https://digitaleat.kfc.com/menus/image/bare/kfc-BevBucket?q=75&w=1280",
+            name: "1/2 Callon Beverage",
+            calories: "calories- 0-910",
+            price: 1.79,
+        }
+    ]
+    localStorage.setItem("drinks", JSON.stringify(DRINKS));
+
+    var array12 = JSON.parse(localStorage.getItem("drinks")) || [];
+    createTable12(array12);
+    function createTable12(array12) {
+        array12.map(function (elem) {
+            var box = document.createElement("div");
+            box.setAttribute("id", "box");
+
+
+            // box.style.border= "1px solid green";
+
+            var image = document.createElement("img");
+            image.setAttribute("src", elem.image_url);
+            image.style.height = "75%";
+            image.style.width = "100%";
+
+            var name = document.createElement("p");
+            name.textContent = elem.name;
+            name.style.marginBottom = "-10px";
+
+            var calories = document.createElement("p");
+            calories.textContent = elem.calories;
+            calories.style.marginBottom = "-10px";
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "flex")
+
+            var loc = document.createElement("p");
+            loc.textContent = `Price: $${elem.price}`;
+
+            var btn = document.createElement("button");
+            btn.innerHTML = "Add to cart";
+            btn.addEventListener("click", function () {
+                addcartfunc(elem);
+                nos++;
+                console.log(nos)
+                document.querySelector("#noofcartitem").textContent= nos;
+            });
+
+            div2.append(loc, btn)
+
+            box.append(image, name, calories, div2)
+            document.querySelector("#container6con").append(box);
+            // console.log(array12)
+        })
+    }
+    function addcartfunc(elem) {
+        // console.log(elem)
+        cartarray.push(elem);
+        localStorage.setItem("cartdata", JSON.stringify(cartarray))
+        alert("Added successfully");
+    }
+</script>
