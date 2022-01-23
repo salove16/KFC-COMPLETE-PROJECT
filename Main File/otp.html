@@ -60,7 +60,7 @@
 <script>
 document.querySelector("form").addEventListener("submit", myFunction);
 
-var count=JSON.parse(localStorage.getItem("order_no"))||0;
+var count=JSON.parse(localStorage.getItem("order_no"))||10000;
 function myFunction(event) {
     event.preventDefault();
     var orderarr=[];
@@ -68,7 +68,7 @@ function myFunction(event) {
    if(verify==1234)
    {
        window.location.href="success.html"
-       count++;
+       count+=1;
     //    orderarr.push(count)
        localStorage.setItem("order_no",JSON.stringify(count))
 

@@ -82,7 +82,7 @@ function homePage(){
     window.location.href="homepage.html"
 }
 var ordervalue=JSON.parse(localStorage.getItem("order_no"))
-document.querySelector("#order_id").textContent="Order-No.-#000"+ordervalue;
+document.querySelector("#order_id").textContent="Order-No.-#"+ordervalue;
 console.log(ordervalue)
 localStorage.removeItem("cartdata")
 </script>
