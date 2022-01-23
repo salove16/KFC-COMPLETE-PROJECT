@@ -46,6 +46,7 @@ main{
     text-transform: uppercase;
     width: 82%;
     margin: auto;
+    margin-top: 40px;
 }
 
 #about_kfc{
