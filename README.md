@@ -19,12 +19,12 @@
   <p align="center">
    Creating a clone of E-Commerce website using HTML,CSS,JavaScript.
     we have developed a clone project on https://kfc.com/ within 6 days with the help of 6 members, there name is
-    ##
+   <div>
     - [@Shashank](https://github.com/salove16)
     - [@Mayuri](https://github.com/mayuri3598)
     - [@Sathish](https://github.com/satishkumarojha)
     - [@Huzaifa](https://github.com/HuzaifaBanegar)
-
+</div>
     <br />
     <a href="https://github.com/salove16/KFC-COMPLETE-PROJECT"><strong>Explore the docs »</strong></a>
     <br />
