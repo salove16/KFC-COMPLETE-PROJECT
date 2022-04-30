@@ -1,8 +1,8 @@
 <div id="top"></div>
-
+<!-- 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][issues-url] -->
 
 
 
@@ -30,9 +30,7 @@
     <br />
     <a href="https://sage-dolphin-365e39.netlify.app/index.html">View Demo</a>
     ·
-<!--     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a> -->
+
   </p>
 </div>
 
