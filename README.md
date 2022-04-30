@@ -20,10 +20,31 @@
    Creating a clone of E-Commerce website using HTML,CSS,JavaScript.
     we have developed a clone project on https://kfc.com/ within 6 days with the help of 6 members, there name is
    <div>
-    - [@Shashank](https://github.com/salove16)
+<!--     - [@Shashank](https://github.com/salove16)
     - [@Mayuri](https://github.com/mayuri3598)
     - [@Sathish](https://github.com/satishkumarojha)
-    - [@Huzaifa](https://github.com/HuzaifaBanegar)
+    - [@Huzaifa](https://github.com/HuzaifaBanegar) -->
+      <ul>
+<li>
+  <a href="https://github.com/salove16">Shashank</a>
+</li>
+<li>
+  <a href="https://github.com/mayuri3598">Mayuri</a>
+</li>
+<li>
+  <a href="https://github.com/satishkumarojha">Sathish</a>
+</li>
+<li>
+  <a href="https://github.com/HuzaifaBanegar">Huzaifa</a>
+</li>
+<!-- <li>
+  <a href=""></a>
+</li>
+<li>
+  <a href=""></a>
+</li> -->
+</ul>
+   
 </div>
     <br />
     <a href="https://github.com/salove16/KFC-COMPLETE-PROJECT"><strong>Explore the docs »</strong></a>
